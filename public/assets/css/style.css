@@ -34,12 +34,18 @@ Description: Responsive HTML5 / CSS3 One-page Landing App Template.
 /*----------------------------------
 --------- THEME DEFAULT CSS --------
 ----------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
+/* @import url("../fonts/xilosa.ttf"); */
+@font-face {
+    font-family: "xilosa";
+    src: url("../fonts/xilosa.ttf") format("truetype");
+}
+
 body {
     line-height: 24px;
     font-size: 14px;
     color: #666666;
-	font-family: 'Poppins', sans-serif;
+    font-family: xilosa, sans-serif;
     font-weight: 400;
 }
 
@@ -68,18 +74,18 @@ h1 {
 }
 h2 {
     font-size: 30px;
-	color: #232323;
+    color: #232323;
 }
 h4 {
     font-size: 18px;
-	color: #232323;
+    color: #232323;
 }
 h6 {
     font-size: 14px;
-	color: #232323;
+    color: #232323;
 }
 h5 {
-	color: #232323;
+    color: #232323;
 }
 a {
     transition: 0.6s;
@@ -117,7 +123,7 @@ select:focus,
 select:active {
     box-shadow: none;
     border: 0;
-    outline: 0
+    outline: 0;
 }
 input:focus,
 textarea:focus,
@@ -125,11 +131,11 @@ select:focus,
 button:focus {
     outline: none;
 }
-button{
+button {
     cursor: pointer;
 }
 textarea {
-	height: 120px;
+    height: 120px;
 }
 input[type="text"],
 input[type="submit"],
@@ -263,19 +269,19 @@ textarea:focus {
     display: table-cell;
     vertical-align: middle;
 }
-.header.sticky .mainmenu li a.appao-btn ,
+.header.sticky .mainmenu li a.appao-btn,
 .mainmenu li a.appao-btn,
 .appao-btn {
     border: 1px solid #fff;
     color: #fff;
-	border-radius: 15px;
+    border-radius: 15px;
     padding: 6px 25px;
     display: inline-block;
     text-transform: uppercase;
-	cursor: pointer;
-	font-weight: 500;
+    cursor: pointer;
+    font-weight: 500;
 }
-.header.sticky .mainmenu li a.appao-btn:hover ,
+.header.sticky .mainmenu li a.appao-btn:hover,
 .mainmenu li a.appao-btn:hover,
 .appao-btn:hover {
     background: #fff;
@@ -284,16 +290,34 @@ textarea:focus {
 }
 .appao-btn2 {
     border: 1px solid transparent;
-	border-radius: 25px;
-	background: #000529; /* Old browsers */
-	background-image: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    border-radius: 25px;
+    background: #000529; /* Old browsers */
+    background-image: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
 }
 .appao-btn2:hover {
     border: 1px solid #000529;
-	background: transparent;
-	background-image: none;
+    background: transparent;
+    background-image: none;
     color: #000529;
 }
 .flexbox-center {
@@ -321,10 +345,10 @@ input::-webkit-input-placeholder {
     position: fixed;
     top: 0;
     left: 0;
-	transition: all 0.4s;
+    transition: all 0.4s;
     width: 100%;
     z-index: 99;
-	padding: 18px 0;
+    padding: 18px 0;
 }
 .mainmenu {
     text-align: right;
@@ -338,11 +362,11 @@ input::-webkit-input-placeholder {
     color: #fff;
     position: relative;
     padding: 5px 16px;
-	margin: 0 3px;
+    margin: 0 3px;
     border: 1px solid transparent;
 }
 .slicknav_menu {
-	padding: 0;
+    padding: 0;
     background: transparent;
 }
 .slicknav_menu a.active,
@@ -354,20 +378,38 @@ input::-webkit-input-placeholder {
     display: block;
 }
 .slicknav_menu {
-	display: none;
+    display: none;
 }
 .header.sticky {
-	border-bottom: 1px solid #fff;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    border-bottom: 1px solid #fff;
+    background: #000529; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #102055 24%,
+        #151b42 66%,
+        #b96b28 100%
+    );
 }
 .header.sticky {
-	padding: 10px 0;
+    padding: 10px 0;
 }
 .mainmenu li a.appao-btn {
-	margin-left: 55px;
+    margin-left: 55px;
 }
 /*--------------------------------------
 --------- HEADER AREA CSS END ---------
@@ -378,32 +420,55 @@ input::-webkit-input-placeholder {
 ---------------------------------------*/
 .hero-area {
     padding-top: 140px;
-	z-index: 1;
-	position: relative;
-    background-image: url(../img/hero-area.jpg);
+    z-index: 1;
+    position: relative;
+    /* background-image: url(../img/hero-area.jpg); */
+    background-image: linear-gradient(
+            rgba(21, 27, 66, 0.5),
+            rgba(21, 27, 66, 0.5)
+        ),
+        url(../img/hero-area.jpg);
     background-repeat: no-repeat;
     background-position: center;
-	background-attachment: fixed;
+    background-attachment: fixed;
     background-size: cover;
-	overflow: hidden;
+    overflow: hidden;
 }
 .hero-area::before {
-	content: "";
-	top: 0;
-	left: 0;
+    content: "";
+    top: 0;
+    left: 0;
     opacity: 0.85;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-	position: absolute;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    background: #000529; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
 }
 .hero-area-content {
     color: #fff;
-	padding: 80px 0 170px;
+    padding: 80px 0 170px;
 }
 .hero-area-content h1 {
     color: #fff;
@@ -428,10 +493,10 @@ input::-webkit-input-placeholder {
 -------- ABOUT AREA CSS START --------
 ---------------------------------------*/
 .about-area {
-	text-align: center;
+    text-align: center;
 }
 .single-about-box {
-	padding: 25px;
+    padding: 25px;
     transition: all 0.4s;
 }
 .single-about-box i::before {
@@ -442,14 +507,14 @@ input::-webkit-input-placeholder {
 }
 .single-about-box.active,
 .single-about-box:hover {
-	box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
 }
-.single-about-box.active i::before ,
+.single-about-box.active i::before,
 .single-about-box:hover i::before {
     color: #000;
 }
 .single-about-box h4 {
-	margin: 25px 0 15px;
+    margin: 25px 0 15px;
 }
 /*--------------------------------------
 ---------- ABOUT AREA CSS END ----------
@@ -459,26 +524,44 @@ input::-webkit-input-placeholder {
 -------- FEATURE AREA CSS START --------
 ---------------------------------------*/
 .feature-area {
-	z-index: 1;
-	position: relative;
+    z-index: 1;
+    position: relative;
     background-image: url(../img/feature-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .feature-area::before {
-	content: "";
-	top: 0;
-	left: 0;
+    content: "";
+    top: 0;
+    left: 0;
     opacity: 0.85;
-	right: 0;
-	bottom: 0;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-	z-index: -1;
-	position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #000529; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
+    z-index: -1;
+    position: absolute;
 }
 .single-feature-box h4 {
     font-size: 20px;
@@ -496,8 +579,8 @@ input::-webkit-input-placeholder {
 }
 .feature-box-icon {
     flex: 1;
-	font-size: 20px;
-	transition: all 0.4s;
+    font-size: 20px;
+    transition: all 0.4s;
 }
 .single-feature-box li:hover .feature-box-icon i::before {
     border-radius: 0;
@@ -506,7 +589,7 @@ input::-webkit-input-placeholder {
 .single-feature-box h3,
 .single-feature-box h4,
 .single-feature-box {
-	color: #fff;
+    color: #fff;
 }
 .feature-box-icon i::before {
     border: 2px dashed #fff;
@@ -516,7 +599,7 @@ input::-webkit-input-placeholder {
     text-align: center;
     line-height: 38px;
     border-radius: 100%;
-	transition: all 0.4s;
+    transition: all 0.4s;
 }
 /*--------------------------------------
 --------- FEATURE AREA CSS END ---------
@@ -526,16 +609,16 @@ input::-webkit-input-placeholder {
 -------- SHOWCASE AREA CSS START -------
 ---------------------------------------*/
 .showcase-area {
-	padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 .single-showcase-box {
-	padding: 0 0 40px;
+    padding: 0 0 40px;
 }
 .single-showcase-box p {
-	margin: 20px 0 25px;
+    margin: 20px 0 25px;
 }
 .single-showcase-box h4 {
-	font-size: 20px;
+    font-size: 20px;
 }
 /*--------------------------------------
 --------- SHOWCASE AREA CSS END --------
@@ -547,7 +630,7 @@ input::-webkit-input-placeholder {
 .video-area {
     background: url(../img/video-overview.jpg) no-repeat center / cover;
     position: relative;
-	background-attachment: fixed;
+    background-attachment: fixed;
     text-align: center;
     z-index: 1;
     color: #fff;
@@ -559,10 +642,28 @@ input::-webkit-input-placeholder {
     left: 0;
     width: 100%;
     height: 100%;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background: #000529; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
     opacity: 0.85;
     z-index: -1;
 }
@@ -573,20 +674,20 @@ input::-webkit-input-placeholder {
     line-height: 80px;
     font-size: 25px;
     color: #000529;
-    border: 10px solid rgba(255,255,255,0.7);
+    border: 10px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     transition: all 0.4s;
     position: relative;
     z-index: 1;
 }
 .video-popup i::before {
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #fff;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
     border-radius: 50%;
 }
 .video-popup i:hover {
@@ -610,33 +711,33 @@ input::-webkit-input-placeholder {
     margin-bottom: 15px;
 }
 .screenshot-wrap .slick-list {
-	padding-bottom: 90px !important;
-	padding-top: 80px !important;
+    padding-bottom: 90px !important;
+    padding-top: 80px !important;
 }
 .single-screenshot.slick-slide {
-	z-index: 1;
+    z-index: 1;
 }
 .single-screenshot.slick-active {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
-	z-index: 2;
-	transition: all 0.3s ease-in 0s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+    transition: all 0.3s ease-in 0s;
 }
 .single-screenshot.slick-center {
-	position: relative;
-	-webkit-transform: scale(1.25);
-	-ms-transform: scale(1.25);
-	transform: scale(1.25);
-	z-index: 3;
-	transition: all 0.3s ease-in 0s;
+    position: relative;
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    z-index: 3;
+    transition: all 0.3s ease-in 0s;
 }
 .single-screenshot img {
-	width: 100%;
+    width: 100%;
 }
 .slick-dots {
-	text-align: center;
-	margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 .slick-dots li.slick-active button {
     background-color: #0074da;
@@ -651,7 +752,7 @@ input::-webkit-input-placeholder {
     font-size: 0;
     margin: 0 3px;
     padding: 0;
-	cursor: pointer;
+    cursor: pointer;
     width: 15px;
     height: 15px;
     display: inline-block;
@@ -683,37 +784,55 @@ input::-webkit-input-placeholder {
     left: 0;
     width: 100%;
     height: 100%;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background: #000529; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
     opacity: 0.85;
     z-index: -1;
 }
-.pricing-area .sec-title ,
+.pricing-area .sec-title,
 .pricing-area .sec-title h2 {
-	color: #fff;
+    color: #fff;
 }
 .single-pricing-box {
-	background: #fff;
-	text-align: center;
-	transition: all 0.4s;
+    background: #fff;
+    text-align: center;
+    transition: all 0.4s;
 }
 .pricing-top {
     padding: 15px;
 }
 .pricing-top h4 {
-	font-weight: 400;
+    font-weight: 400;
 }
 .pricing-top p {
-	font-style: italic;
-	font-weight: 500;
+    font-style: italic;
+    font-weight: 500;
 }
 .price {
     background-color: #666666;
     padding: 15px;
     color: #fff;
-	transition: all 0.4s;
+    transition: all 0.4s;
 }
 .price-details {
     padding: 25px 15px;
@@ -743,23 +862,59 @@ input::-webkit-input-placeholder {
 }
 .price-details .appao-btn {
     padding: 5px 35px;
-	margin-top: 10px;
-	border: 2px solid #666;
-	color: #666;
-	border-radius: 30px;
-	transition: all 0.4s;
+    margin-top: 10px;
+    border: 2px solid #666;
+    color: #666;
+    border-radius: 30px;
+    transition: all 0.4s;
 }
 .single-pricing-box:hover .price {
-	background-color: #000529; /* Old browsers */
-	background-image: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background-color: #000529; /* Old browsers */
+    background-image: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
 }
 .single-pricing-box:hover .appao-btn {
     background-color: #000529;
-    background-image: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%);
-    background-image: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background-image: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
+    background-image: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
+    background-image: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
     color: #fff;
     border: 2px solid #005db5;
 }
@@ -796,8 +951,8 @@ input::-webkit-input-placeholder {
     transform: scale(0.7);
     left: 50%;
     cursor: pointer;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     margin-left: -150px;
     z-index: 1;
 }
@@ -807,8 +962,8 @@ input::-webkit-input-placeholder {
     margin: 0 -150px 0 0;
 }
 .testimonial-thumb > div:hover {
-	opacity: 0.7;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 /*--------------------------------------
 ------- TESTIMONIAL AREA CSS END -------
@@ -819,12 +974,12 @@ input::-webkit-input-placeholder {
 ---------------------------------------*/
 .counter-area {
     background: url(../img/counter-bg.jpg) no-repeat center / cover;
-	background-attachment: fixed;
+    background-attachment: fixed;
     position: relative;
     text-align: center;
     z-index: 1;
-	color: #fff;
-	padding-top: 50px;
+    color: #fff;
+    padding-top: 50px;
 }
 .counter-area::before {
     content: "";
@@ -833,10 +988,28 @@ input::-webkit-input-placeholder {
     left: 0;
     width: 100%;
     height: 100%;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background: #000529; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
     opacity: 0.85;
     z-index: -1;
 }
@@ -850,11 +1023,11 @@ input::-webkit-input-placeholder {
     font-size: 50px;
     margin: auto;
     box-shadow: 0 8px 8px #020202;
-	border: 2px solid transparent;
-	transition: all 0.4s;
+    border: 2px solid transparent;
+    transition: all 0.4s;
 }
 .single-counter-box h1 {
-	margin: 25px 0 10px;
+    margin: 25px 0 10px;
 }
 .single-counter-box p {
     font-size: 24px;
@@ -864,8 +1037,8 @@ input::-webkit-input-placeholder {
     margin-top: 40px;
 }
 .single-counter-box:hover i::before {
-	background: transparent;
-	border: 2px solid #fff;
+    background: transparent;
+    border: 2px solid #fff;
     box-shadow: none;
 }
 /*--------------------------------------
@@ -881,7 +1054,7 @@ input::-webkit-input-placeholder {
     transition: all 0.4s;
 }
 .team-member-info h4 {
-	font-size: 20px;
+    font-size: 20px;
 }
 .team-member-info {
     padding: 20px 10px;
@@ -894,7 +1067,7 @@ input::-webkit-input-placeholder {
 .team-member-icon {
     position: absolute;
     top: 0;
-	left: -100%;
+    left: -100%;
     height: 100%;
     width: 100%;
     transition: all 0.4s;
@@ -902,9 +1075,27 @@ input::-webkit-input-placeholder {
 .team-member-img::before {
     content: "";
     background: #000529; /* Old browsers */
-    background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
     top: 0;
     right: 0;
     width: 0;
@@ -915,19 +1106,19 @@ input::-webkit-input-placeholder {
 }
 .team-member-icon a {
     color: #fff;
-	width: 30px;
-	height: 30px;
-	display: inline-block;
-	line-height: 30px;
-	border: 1px solid transparent;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    border: 1px solid transparent;
 }
 .team-member-icon a:hover {
-	border: 1px solid #fff;
+    border: 1px solid #fff;
 }
 .single-team-member:hover .team-member-img::before {
     width: 100%;
 }
-.single-team-member:hover .team-member-icon  {
+.single-team-member:hover .team-member-icon {
     left: 0;
 }
 /*--------------------------------------
@@ -950,14 +1141,32 @@ input::-webkit-input-placeholder {
     left: 0;
     width: 100%;
     height: 100%;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background: #000529; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
     opacity: 0.85;
     z-index: -1;
 }
-.download-area ,
+.download-area,
 .download-area h1,
 .download-area h2,
 .download-area h3,
@@ -965,7 +1174,7 @@ input::-webkit-input-placeholder {
 .download-area h5,
 .download-area h6,
 .download-area a {
-	color: #fff;
+    color: #fff;
 }
 .download-area li {
     display: inline-block;
@@ -1031,7 +1240,8 @@ p.form-message.sucess {
 .post-author a i {
     margin-right: 5px;
 }
-.post-details a:hover,.post-details a h4:hover {
+.post-details a:hover,
+.post-details a h4:hover {
     color: #0074da;
 }
 h4.post-title {
@@ -1064,10 +1274,28 @@ h4.post-title a {
     left: 0;
     width: 100%;
     height: 100%;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background: #000529; /* Old browsers */
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
     opacity: 0.85;
     z-index: -1;
 }
@@ -1077,7 +1305,7 @@ h4.post-title a {
     padding: 40px 65px;
     margin-bottom: 40px;
     margin-top: -80px;
-	border: 1px solid #ddd;
+    border: 1px solid #ddd;
 }
 .contact-form input,
 .contact-form textarea,
@@ -1085,15 +1313,16 @@ h4.post-title a {
     border: 1px solid #bbb;
 }
 .contact-form button {
-	transition: all 0.4s; 
+    transition: all 0.4s;
 }
-.blog-reply button:hover ,
+.blog-reply button:hover,
 .contact-form button:hover {
     background: #0074da;
     border-color: #0074da;
     color: #fff;
 }
-.contact-form h4,.contact-address h4 {
+.contact-form h4,
+.contact-address h4 {
     margin-bottom: 20px;
     font-size: 20px;
 }
@@ -1146,7 +1375,7 @@ h4.post-title a {
     background: #fff;
     display: inline-block;
     line-height: 35px;
-	font-size: 16px;
+    font-size: 16px;
     border-radius: 100%;
     margin: 0 5px;
 }
@@ -1204,11 +1433,11 @@ h4.post-title a {
 ---------------------------------------*/
 .scrollToTop {
     width: 40px;
-	display: none;
+    display: none;
     height: 40px;
     line-height: 39px;
     background: #000;
-	display: none;
+    display: none;
     color: #fff;
     position: fixed;
     border: 1px solid #fff;
@@ -1217,13 +1446,31 @@ h4.post-title a {
     right: 15px;
     z-index: 99;
     text-align: center;
-	font-size: 18px;
+    font-size: 18px;
 }
 .scrollToTop:hover {
     background: #000529;
-    background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%);
-    background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
     border: 1px solid #fff;
     color: #fff;
 }
@@ -1239,10 +1486,10 @@ h4.post-title a {
 ------ INDEX SLIDER PAGE CSS START -----
 ---------------------------------------*/
 .hero-area-slider .owl-nav div {
-	opacity: 0;
+    opacity: 0;
 }
 .hero-area-slider:hover .owl-nav div {
-	opacity: 1;
+    opacity: 1;
 }
 .hero-area-single-slide h1,
 .hero-area-single-slide p,
@@ -1253,25 +1500,25 @@ h4.post-title a {
 .hero-area-single-slide h1 {
     -webkit-transform: translateX(-140px);
     transform: translateX(-140px);
-    -webkit-transition: all .6s linear 0s;
-    transition: all .6s linear 0s;
+    -webkit-transition: all 0.6s linear 0s;
+    transition: all 0.6s linear 0s;
 }
 .hero-area-single-slide p {
     -webkit-transform: translateX(-140px);
     transform: translateX(-140px);
-    -webkit-transition: all .15s linear 0s;
-    transition: all .15s linear 0s;
+    -webkit-transition: all 0.15s linear 0s;
+    transition: all 0.15s linear 0s;
 }
 .hero-area-single-slide a.appao-btn {
     -webkit-transform: translateY(120px);
     transform: translateY(120px);
-    -webkit-transition: all .10s linear 0s;
-    transition: all .10s linear 0s;
+    -webkit-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
 }
 .hero-area-single-slide img {
     opacity: 0;
-    -webkit-transition: all .4s;
-    transition: all .4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
 }
 .active .hero-area-single-slide h1,
 .active .hero-area-single-slide p,
@@ -1304,7 +1551,7 @@ h4.post-title a {
 ------ INDEX VIDEO PAGE CSS START -----
 ---------------------------------------*/
 .hero-area > .mbYTP_wrapper {
-	z-index: -2 !important;
+    z-index: -2 !important;
 }
 /*--------------------------------------
 ------- INDEX VIDEO PAGE CSS END ------
@@ -1314,14 +1561,14 @@ h4.post-title a {
 -------- Pre Loader Style START --------
 ---------------------------------------*/
 #preloader {
-  position: fixed;
-  z-index: 99999999999;
-  top: 0;
-  left: 0;
-  overflow: visible;
-  width: 100%;
-  height: 100%;
-  background: #fff url("../img/loader.gif") no-repeat center center;
+    position: fixed;
+    z-index: 99999999999;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    background: #fff url("../img/loader.gif") no-repeat center center;
 }
 /*--------------------------------------
 --------- Pre Loader Style END ---------
@@ -1344,19 +1591,19 @@ h4.post-title a {
 }
 .breadcrumb-area ul li a {
     color: #fff;
-	padding: 0 10px;
-	position: relative;
+    padding: 0 10px;
+    position: relative;
 }
 .breadcrumb-area ul li a::before {
-	position: absolute;
-	right: -2px;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	content: "/";
+    position: absolute;
+    right: -2px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: "/";
 }
 .breadcrumb-area ul li:last-child a::before {
-	content: "";
+    content: "";
 }
 .breadcrumb-area ul {
     margin-top: 10px;
@@ -1372,7 +1619,7 @@ h4.post-title a {
 -------- BREADCRUMB CSS START --------
 ---------------------------------------*/
 .blog-page .single-post {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .pagination {
     text-align: center;
@@ -1384,9 +1631,27 @@ h4.post-title a {
 }
 .pagination li a {
     background-color: #000529;
-    background-image: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%);
-    background-image: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background-image: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
+    background-image: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
+    background-image: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -1395,7 +1660,7 @@ h4.post-title a {
     font-size: 18px;
 }
 .pagination li a:hover {
-	background-image: none;
+    background-image: none;
     background-color: #000;
 }
 /*--------------------------------------
@@ -1406,7 +1671,7 @@ h4.post-title a {
 -------- BLOG DETAILS CSS START --------
 ---------------------------------------*/
 .blog-detail {
-	padding: 90px 0 155px;
+    padding: 90px 0 155px;
 }
 .date-time li {
     display: inline-block;
@@ -1426,16 +1691,16 @@ h4.post-title a {
     padding-top: 40px;
 }
 .blog-reply button {
-	transition: all 0.4s;
+    transition: all 0.4s;
 }
 .blog-reply textarea {
-	height: 150px;
+    height: 150px;
 }
 .blog-reply h4 {
     margin-bottom: 20px;
 }
 .sidebar {
-	padding-left: 30px;
+    padding-left: 30px;
 }
 .widget form input {
     width: 78%;
@@ -1443,14 +1708,33 @@ h4.post-title a {
 .widget form button {
     width: 20%;
     float: right;
-	padding: 6px 0;
+    padding: 6px 0;
     background: #000529;
     color: #fff;
-    background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%);
-    background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    background: -moz-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #002055 24%,
+        #005db5 67%,
+        #0074d9 100%
+    );
 }
-.widget form input,.widget form button {
+.widget form input,
+.widget form button {
     margin-bottom: 0;
 }
 .widget {
@@ -1469,8 +1753,8 @@ h4.post-title a {
 }
 .widget li:last-child {
     border-bottom: none;
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .widget li a:hover {
     color: #000;
@@ -1479,7 +1763,7 @@ h4.post-title a {
     display: inline-block;
     border: 1px solid #ccc;
     padding: 5px 15px;
-	margin-bottom: 8px;
+    margin-bottom: 8px;
     margin-right: 5px;
     color: #000;
 }

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Prantokon - App Landing Html Template</title>
+		<title>EWWO</title>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
 		<!-- Slick nav CSS -->
@@ -28,7 +28,7 @@
 		<!-- Responsive CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
 		<!-- Favicon Icon -->
-		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
+		<link rel="icon" type="image/png" href="assets/img/logo.png" />
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -43,7 +43,7 @@
 				<div class="row flexbox-center">
 					<div class="col-lg-2 col-md-3 col-6">
 						<div class="logo">
-							<a href="#home"><img src="assets/img/logo.png" alt="logo" /></a>
+							<a href="#home"><img src="assets/img/logo2.png" alt="logo" /></a>
 						</div>
 					</div>
 					<div class="col-lg-10 col-md-9 col-6">
@@ -66,7 +66,7 @@
 		</header><!-- header section end -->
 		<!-- hero area start -->
 		<section class="hero-area" id="home">
-			<div class="player" data-property="{videoURL:'http://youtu.be/kn-1D5z3-Cs',containment:'#home',autoPlay:true, mute:true, startAt:0, showControls:false, loop:true, opacity:1}"></div>
+			<div class="player" data-property="{containment:'#home',autoPlay:true, mute:true, startAt:0, showControls:false, loop:true, opacity:1}"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7">
@@ -796,26 +796,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		<a href="#" class="scrollToTop">
 			<i class="icofont icofont-arrow-up"></i>
 		</a>
-		<div class="switcher-area" id="switch-style">
-			<div class="display-table">
-				<div class="display-tablecell">
-					<a class="switch-button" id="toggle-switcher"><i class="icofont icofont-wheel"></i></a>
-					<div class="switched-options">
-						<div class="config-title">Home variation:</div>
-						<ul>
-							<li><a href="index.html">Home - Fixed Text</a></li>
-							<li><a href="index-slider.html">Home - Slider Effect</a></li>
-							<li class="active"><a href="index-video.html">Home - Video Background</a></li>
-						</ul>
-						<div class="config-title">Other Pages</div>
-						<ul>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="blog-detail.html">Blog Details</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- jquery main JS -->
 		<script src="assets/js/jquery.min.js"></script>
 		<!-- Bootstrap JS -->
