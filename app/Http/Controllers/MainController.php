@@ -10,6 +10,12 @@
     public function valores(){
       return view('pricing');
     }
+    public function contact(){
+      return view('contact');
+    }
+    public function about(){
+      return view('about');
+    }
 
   }
 ?>

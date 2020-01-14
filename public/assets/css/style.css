@@ -53,10 +53,6 @@ body {
 ---------- RESET CSS ---------
 ----------------------------*/
 h1,
-h2 {
-    font-family: xilosa;
-}
-h1,
 h2,
 h3,
 h4,
@@ -407,7 +403,7 @@ input::-webkit-input-placeholder {
         #000529 1%,
         #102055 24%,
         #151b42 66%,
-        #b96b28 100%
+        #000529 100%
     );
 }
 .header.sticky {

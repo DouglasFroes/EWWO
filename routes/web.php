@@ -13,6 +13,10 @@
 
 Route::get('/', 'MainController@home');
 Route::get('/valores', 'MainController@valores');
+Route::get('/contatos', 'MainController@contact');
+Route::get('/sobre', 'MainController@about');
+
+
 
 
 Route::get('/home2', function () {

@@ -35,12 +35,13 @@
 		<![endif]-->
 	</head>
 	<body data-spy="scroll" data-target=".header" data-offset="50">
-  	<!-- Page loader -->
-    <div id="preloader"></div>
+  
 
-    @extends('header')
-    @yield('content')
-    @extends('footer')
+		@include('header')
+
+		@yield('content')
+		
+    @include('footer')
 
   </body>
   <a href="#" class="scrollToTop">
