@@ -222,6 +222,7 @@ textarea:focus {
 }
 .ptb-90 {
     padding: 90px 0;
+    padding-top: 150px;
 }
 .owl-nav div {
     position: absolute;
@@ -269,6 +270,10 @@ textarea:focus {
 .display-tablecell {
     display: table-cell;
     vertical-align: middle;
+}
+.header2 {
+    width: 100%;
+    height: 90px;
 }
 .header.sticky .mainmenu li a.appao-btn,
 .mainmenu li a.appao-btn,
@@ -357,6 +362,12 @@ input::-webkit-input-placeholder {
 .mainmenu li {
     display: inline-block;
     text-transform: uppercase;
+}
+.logo1 {
+    margin-top: -33px;
+}
+.logo2 {
+    margin-top: -51px;
 }
 .mainmenu li a {
     display: inline-block;
@@ -777,6 +788,7 @@ input::-webkit-input-placeholder {
     position: relative;
     text-align: center;
     z-index: 1;
+    padding-top: 150;
 }
 .pricing-area::before {
     content: "";
@@ -1259,8 +1271,22 @@ h4.post-title a {
 /*---------------------------------------
 ----- MAP AND FOOTER AREA CSS START -----
 ---------------------------------------*/
+.blue-background {
+    background: linear-gradient(
+        to right,
+        #000529 1%,
+        #8099eb 24%,
+        #1d244e 79%,
+        #000529 100%
+    );
+    width: 100%;
+    height: 120px;
+}
 .google-map {
     height: 450px;
+}
+.footer1 {
+    padding-top: 5%;
 }
 .footer {
     background: url(../img/footer-bg.jpg) no-repeat center / cover;

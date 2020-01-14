@@ -1,5 +1,5 @@
 <!-- footer section start -->
-<footer class="footer" id="contact">
+<footer class="footer footer1" id="contact">
 			<div class="container">
 				<div class="row">
              <div class="col-lg-12">

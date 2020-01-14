@@ -3,6 +3,7 @@
 @section('content')
 
 		<!-- google map area start -->
+		<div class="blue-background"></div>
 		<div class="google-map"></div>
 		<!-- google map area end -->
 		<!-- footer section start -->
