@@ -45,7 +45,7 @@ body {
     line-height: 24px;
     font-size: 18px;
     color: #666666;
-    font-family: xilosa, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
@@ -53,11 +53,16 @@ body {
 ---------- RESET CSS ---------
 ----------------------------*/
 h1,
+h2 {
+    font-family: xilosa;
+}
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+    font-family: xilosa;
     font-weight: 500;
 }
 h1,
