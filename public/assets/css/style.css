@@ -279,7 +279,7 @@ textarea:focus {
 .mainmenu li a.appao-btn,
 .appao-btn {
     border: 1px solid #fff;
-    color: #fff;
+    color: #b96b28;
     border-radius: 15px;
     padding: 6px 25px;
     display: inline-block;
@@ -292,7 +292,7 @@ textarea:focus {
 .appao-btn:hover {
     background: #fff;
     border: 1px solid #fff;
-    color: #666;
+    color: #b96b28;
 }
 .appao-btn2 {
     border: 1px solid transparent;
@@ -364,14 +364,22 @@ input::-webkit-input-placeholder {
     text-transform: uppercase;
 }
 .logo1 {
-    margin-top: -33px;
+    float: left;
+    margin-top: 24px;
 }
 .logo2 {
-    margin-top: -51px;
+    float: right;
+    margin-top: 22px;
+}
+.logo2 a {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #b96b28;
+    position: relative;
 }
 .mainmenu li a {
     display: inline-block;
-    color: #fff;
+    color: #b96b28;
     position: relative;
     padding: 5px 16px;
     margin: 0 3px;
@@ -384,7 +392,8 @@ input::-webkit-input-placeholder {
 .slicknav_menu a.active,
 .mainmenu ul li a:hover,
 .mainmenu ul li a.active {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
+    color: blanchedalmond;
 }
 .mainmenu {
     display: block;
